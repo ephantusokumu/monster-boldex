@@ -13,6 +13,7 @@ constructor(){
     monsters:[  ],
     searchField:''
   };
+  this.handleChange = this.handleChange.bind(this);
 }
 
 
@@ -22,6 +23,12 @@ constructor(){
     .then(response => response.json())
     .then(users => this.setState({monsters:users}))
 
+  }
+
+  handleChange = e =>{
+    this.setState({
+      searchField:e.target.value
+    });
   }
 
 

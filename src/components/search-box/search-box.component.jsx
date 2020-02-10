@@ -8,7 +8,7 @@ export const SearchBox = ({placeholder, handleChange}) => (
     type='search' 
    placeholder={placeholder} 
    onChange ={e =>
-     this.setState({handleChange}
+ this.setState({handleChange}
      )
    }
    />
